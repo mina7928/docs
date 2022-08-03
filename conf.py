@@ -17,7 +17,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'test'
+project = 'Techware Manual'
 copyright = '2022, Mina Yi'
 author = 'Mina Yi'
 
@@ -27,8 +27,14 @@ author = 'Mina Yi'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx_rtd_theme',
+extensions = ['sphinx_rtd_theme', 'myst_parser',
 ]
+
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown',
+    '.md': 'markdown',
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
